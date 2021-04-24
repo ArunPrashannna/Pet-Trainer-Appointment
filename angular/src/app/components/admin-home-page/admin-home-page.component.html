@@ -1,0 +1,32 @@
+<div class="text-center m-5">
+    <button type="button" routerLink="/addTrainer" class="btn btn-primary btn-lg btn-block w-100">Add New Trainer</button>
+</div>
+
+
+
+<div class="container text-center">
+    <table class="table table-hover table-striped">
+        <thead class="table-">
+            <tr>
+                <th>Name</th>
+                <th>Email Id</th>
+                <th>Mobile No</th>
+                <th>Experience</th>
+                <th>DOB</th>
+                <th>Age</th>
+                <th>Password</th>
+            </tr>           
+        </thead>
+        <tbody>
+            <tr *ngFor="let trainer of trainers">  
+                <td>{{trainer.name}}</td> 
+                <td>{{trainer.email}}</td>
+                <td>{{trainer.mobileno}}</td>
+                <td>{{trainer.experience}}</td>
+                <td>{{trainer.dob}}</td>
+                <td>{{trainer.age}}</td>
+                <td>{{trainer.password}}</td>
+            </tr>           
+        </tbody>
+    </table>
+</div>

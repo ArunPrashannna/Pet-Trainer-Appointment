@@ -1,0 +1,61 @@
+<div class="card" style="width: 500px;margin: 100px auto;padding: 10px;">
+    <div class="font-monospace fs-1 fw-bold" style="text-align: center; padding: 20px 0px 10px;">
+        Trainer Details
+    </div>
+    <div>
+      <form (ngSubmit)="onSubmit()" style="width: 400px; margin: auto;">
+        <div class="form-group">
+            <label></label>
+            <input type="text" name="name" 
+            [(ngModel)]="trainer.name"
+            class="form-control"
+            id="name" placeholder="Name" style="padding-bottom: 10px">
+
+            <label></label> 
+            <input type="email"
+            [(ngModel)]="trainer.email"
+            name="email" class="form-control"
+            id="email" placeholder="Email" style="padding-bottom: 10px">
+
+            <label></label> 
+            <input type="text"
+            [(ngModel)]="trainer.mobileno"
+            name="mobileno" class="form-control"
+            id="mobileno" placeholder="Mobile Number" style="padding-bottom: 10px">
+
+            <label></label>
+            <input
+            type="text"
+            [(ngModel)]="trainer.experience"
+            name="experience" class="form-control" 
+            id="experience" placeholder="Experience(In Years)" style="padding-bottom: 10px">
+            
+            <label></label>
+            <input
+            type="text" name="dob" class="form-control" 
+            id="dob"
+            [(ngModel)]="trainer.dob"
+            placeholder="Date of Birth" style="padding-bottom: 10px">
+
+            <label></label>
+            <input
+            type="text" name="age" class="form-control" 
+            id="age" 
+            [(ngModel)]="trainer.age"
+            placeholder="age" style="padding-bottom: 10px">
+
+            <label></label>
+            <input
+            type="password" 
+            [(ngModel)]="trainer.password"
+            name="password" class="form-control" 
+            id="password" placeholder="Password" style="padding-bottom: 10px">
+        </div>
+        <div style="margin: 20px auto;text-align: center;">
+          <button type="submit"
+          class="btn btn-primary btn-lg col-sm-7 col-md-5 col-lg-4"
+          style="padding: auto;">Add</button>
+        </div> 
+      </form>  
+    </div>
+  </div>

@@ -1,0 +1,31 @@
+<div class="card" style="width: 500px;margin: 100px auto;padding: 10px;">
+    <div class="font-monospace fs-1 fw-bold" style="text-align: center; padding: 20px 0px 10px;">
+        Login
+    </div>
+  
+      <form (ngSubmit)="onLogin()"
+    style="width: 400px; margin: auto;">
+        <div class="form-group">
+          <label></label>
+          <input [(ngModel)]="login.username" type="text" name="email" class="form-control" id="email" 
+          placeholder="Email" style="padding-bottom: 10px">
+          
+          <label></label>
+          <input [(ngModel)]="login.password" type="password" name="password" class="form-control" id="password" 
+          placeholder="Password" style="padding-bottom: 10px">
+        </div>
+
+        <label></label>
+          <select [(ngModel)]="login.role"
+          class="d-block w-100 p-2" name="cars" id="cars">
+          <option value="Dog Owner">Dog Owner</option>
+          <option value="Trainer">Trainer</option>
+          <option value="Admin">Admin</option>
+        </select>
+
+        <div style="margin: 20px auto;text-align: center;">
+          <button type="submit" class="btn btn-primary btn-lg col-sm-7 col-md-5 col-lg-4"
+          style="padding: auto;">Login</button>
+        </div>
+        
+        <a routerLink="/signup">Do not have an account? sign up</a>  
